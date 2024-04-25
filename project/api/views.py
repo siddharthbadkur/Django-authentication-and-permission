@@ -9,6 +9,7 @@ class MovieViewSet(viewsets.ModelViewSet):
 	queryset = MovieModel.objects.all()
 	serializer_class = MovieSerializer
 
+
 class StudentViewSet(viewsets.ModelViewSet):
 	permission_classes = [IsAdminUser]
 	queryset = StudentModel.objects.all()
